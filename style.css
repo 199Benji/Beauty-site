@@ -1,0 +1,582 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0px .5em;
+    height: 100vh;
+}
+
+header{
+    background-color: #fff;
+    padding: 0px 40px;
+    border: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    gap: 30px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    transition: .5s;
+    font-family: poppins;
+    font-weight: 500;
+
+}
+nav ul li:first-child{
+    margin-right: auto;
+    font-weight: 600;
+    color: #000000;
+    font-size: 23px;
+    text-decoration: none;
+    font-family: Playfair Display;
+}
+header img{
+    width: 30px;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* THE HEADER MEDIA QUERY  */
+@media(max-width: 650px){
+    header ul{
+        display: inline-block;
+    }
+    header{
+        text-align: center;
+    }
+}
+/* THE HERO SECTION  */
+.Hero{
+    padding: 150px 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("Images/Hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.Hero .hero-content{
+    margin-top: 20px;
+}
+
+.hero-content h2{
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: #fff;
+    font-family: poppins;
+}
+
+
+.hero-content p{
+    margin-top: 20px;
+    font-family: poppins;
+    color: #fff;
+}
+
+.Hero .button{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.button .btn{
+    padding: 10px 40px;
+    margin-top: 30px;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+.button .second{
+    transition: all .4s;
+}
+.button .color{
+    color: #000000;
+    background-color: #ffff;
+    transition: all .4s;
+}
+.button .color:hover{
+    background-color: rgb(35, 6, 29);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.button .second:hover{
+    background-color: rgb(35, 6, 29);
+    color: #fff;
+
+}
+
+/* HERO QUERY  */
+@media(max-width: 650px){
+.hero-content{
+    margin-top: 30px;
+    
+}
+.hero-content h2{
+    font-size: 1.8rem;
+    margin-top: 50px;
+}
+.Hero .hero-content{
+    margin-top: 10px;
+}
+.hero-content p{
+    font-size: 0.8rem;
+}
+.Hero .button{
+    display: inline-block;
+}
+.button .btn{
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 60px;
+    font-size: 0.82rem;
+
+}
+}
+/* THE FEATURED SECTION  */
+.featured{
+    padding: 70px 40px;
+    margin-top: 4px;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.637), rgba(0, 0, 0, 0.586))
+    url("Images/feautured.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.featured h2{
+    font-family: Playfair Display;
+    font-size: 25px;
+}
+.featured p{
+    font-family: poppins;
+
+}
+
+.container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    
+}
+.container .items {
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 500px rgb(172, 49, 70);
+    height: auto;
+    max-width: 250px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container .text{
+    padding: 30px;
+}
+.text p{
+    font-family: poppins;
+}
+.text h2{
+    margin-bottom: 15px;
+    font-family: Playfair Display;
+}
+.text .btn1{
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #000000;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.text .view{
+    background-color: rgb(132, 2, 36);
+    padding: 8px 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.view a{
+    text-decoration: none;
+    color: white;
+
+}
+.items img{
+    width: 280px;
+    
+}
+
+/* THE FEATURED QUERY  */
+@media(max-width: 650px){
+    .container{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .container .items{
+        margin: 0px auto;
+    }
+    .featured p{
+        font-size: 0.9rem;
+    }
+
+}
+
+/* THE SHAMPPPOSS SECTION  */
+.shamposs-container{
+    padding: 70px 40px;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.shamposs h2{
+    font-family: Playfair Display;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+hr{
+    width: 80px;
+    margin: 0px auto;
+    border: 2px solid rgb(128, 0, 34);;   
+}
+
+.shamposs-item{
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    background-color: #fff;
+    margin: -0px auto 0px auto;
+    box-shadow: 0px 0px 30px rgb(172, 49, 70);
+
+
+}
+.shamposs-item img{
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+.shamposs-text{
+    margin-top: -40px;
+    padding: 20px;
+
+}
+
+.shamposs-text h2{
+    font-family: Playfair Display;
+    font-size: 1.2rem;
+}
+.shamposs-text p{
+    font-family: popins;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.shamposs-text button{
+    padding: 8px 30px;
+    margin-top: 10px;
+    background-color: rgb(132, 2, 36);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: poppins;
+
+}
+/* THE REAL ABOUT SECTION */
+.real{
+    padding: 30px 40px;
+    background: #dfc0c0;
+}
+.real .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.container .abt{
+    padding: 0px 50px;
+}
+.container img{
+    width: 370px;
+    border-radius: 20px;
+}
+.About-text h2{
+    font-family:Playfair Display ;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(132, 2, 36);
+}
+.About-text p{
+    font-family: poppins;
+}
+/* THE ABOUT SECTION:4 ...................MISTAKE THIS IS ACTUALLY CONTACT US*/ 
+.About{
+    padding: 70px 40px;
+    align-items: center;
+    background-color: #fff;
+}
+.about-container{
+    display: flex;  
+    justify-content: center; 
+    gap: 20px;
+}
+.About h2{
+    font-size: Playfair Display;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    }
+.About hr{
+    width: 80px;
+    margin: -30px auto 20px auto;
+    border: 2px solid rgb(128, 0, 34);;   
+}
+.about-items{
+    border: 1px solid ;
+    background-color:#ffff;
+    padding: 40px 25px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 3px #863d656f;
+}
+.about-items:nth-child(2){
+    background-color:  rgb(132, 2, 36);
+}
+.about-items a{
+    color: #fff;
+    font-family: poppins;
+    text-decoration: none;
+    font-weight: 600;
+}
+.fa-solid{
+    transform: scale(1.7);
+    color: #000000;
+    margin-bottom: 20px;
+}
+.about-items p{
+    color: #fff;
+    font-family: poppins;
+    margin: 12px 0px;
+}
+.About .form{
+    text-align: center;
+    margin-top: 50px;
+}
+
+form{
+    align-items: center;
+    padding: 20px;
+}
+.form form h2{
+    font-family: poppins;
+    font-size: 30px;
+    margin-bottom: -3px;
+}
+form p{
+    font-family: poppins;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+form input{
+    width: 100%;
+    max-width: 800px;
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f0e4e434;
+    outline-color: rgb(132, 2, 36);
+    justify-content: center;
+
+}
+form input:nth-child(5){
+    border: 1px solid;
+    height: 150px;
+}
+
+input:last-child{
+     background-color:  rgb(132, 2, 36);
+     color: white;
+     font-size: 20px;
+     font-family: poppins;
+}
+.map{
+    text-align: center;
+    padding: 0px 40px;
+}
+/* The About Query */
+@media(max-width:600px){
+    .about-container{
+    flex-direction: column;    
+}
+form p{
+    font-size: 16px;
+}
+}
+iframe{
+    max-width: 800px;
+    width: 100%;
+    height:400px ;
+    border: none;
+    border-radius: 15px;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+iframe:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* THE FOOTER : LAST  */
+footer{
+    padding: 20px 50px;
+    background: #dfc0c0;
+    margin-top: 100px;
+
+}
+.Footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.main{
+    width: 400px;
+    max-width: 100%;
+}
+.brand img{
+    width: 30px;
+}
+.brand h2{
+    font-family: Playfair Display;
+}
+.main .text p{
+    font-family: poppins;
+    padding-right: 13px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    color: #fff;
+
+}
+.icons div{
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 12px;
+    background-color: #000000;
+    cursor: pointer;
+
+}
+.sub-flex{
+    margin-top: 20px;
+    width: 350px;
+
+}
+.sub-flex h3{
+    font-family: Playfair Display;
+
+
+}
+.sub-flex ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px;
+}
+.sub-flex ul li{
+    list-style: none;
+
+}
+.sub-flex ul li a{
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: 600;
+    color:  rgb(132, 2, 36);
+}
+.sub-flex p{
+    font-family: poppins;
+
+}
+.sub-flex button{
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: poppins;
+    font-weight: 600;
+    cursor: pointer;
+}
+footer hr{
+    width: 100%;
+    border: .7px solid rgba(148, 105, 130, 0.384);
+    margin-top: 10px;
+}
+.last{
+    text-align: center;
+    margin-top: 5px;
+    font-family: poppins;
+}
+/* THE FOOTER MEDIA QUERY */
+@media(max-width:600px){
+    .Footer-container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+    .main{
+        margin:0px 55px 0px 0px ;
+    }
+}
+
+
+
+
+
+
+
